@@ -4,7 +4,7 @@ import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 import java.awt.*;
 
-public class Playground extends Canvas implements DotMatrix,MouseMotionListener{
+public class Playground extends Canvas implements DotMatrix,MouseListener{
 	public int scale=5;
 	
 	private ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
@@ -55,14 +55,5 @@ public class Playground extends Canvas implements DotMatrix,MouseMotionListener{
 			i+=scale;
 		}
 	}
-	@Override
-	public void mouseDragged(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void mouseMoved(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

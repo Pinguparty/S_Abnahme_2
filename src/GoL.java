@@ -21,7 +21,7 @@ public class GoL extends Frame implements WindowListener,MouseListener
 			}
 		});
 		
-		addMouseListener(this);
+		grid.addMouseListener(this);
 			
 		setLayout(new BorderLayout());
 			
@@ -136,6 +136,7 @@ public class GoL extends Frame implements WindowListener,MouseListener
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
+		System.out.println("Du hast geklickt!!! x: " + e.getx() + " y: " + e.getx());
 		grid.addCell(e.getX()/scale,e.getY()/scale);
 	}
 
@@ -160,6 +161,7 @@ public class GoL extends Frame implements WindowListener,MouseListener
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
+		System.out.println("Du hast geklickt!!! x: " + e.getx() + " y: " + e.getx());
 		grid.addCell(e.getX()/scale,e.getY()/scale);
 	}
 
@@ -168,6 +170,7 @@ public class GoL extends Frame implements WindowListener,MouseListener
 	@Override
 	public void mouseReleased(MouseEvent arg0) {
 		// TODO Auto-generated method stub
+		System.out.println("Du hast geklickt!!! x: " + e.getx() + " y: " + e.getx());
 		
 	}
 }
