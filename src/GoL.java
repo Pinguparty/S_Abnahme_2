@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class GoL extends Frame implements WindowListener,MouseListener
+public class GoL extends Frame implements WindowListener
 {
 	public int scale=5;
 	Playground grid;
@@ -21,7 +21,7 @@ public class GoL extends Frame implements WindowListener,MouseListener
 			}
 		});
 		
-		grid.addMouseListener(this);
+		grid.addMouseListener(grid);
 			
 		setLayout(new BorderLayout());
 			
@@ -128,49 +128,6 @@ public class GoL extends Frame implements WindowListener,MouseListener
 	@Override
 	public void windowOpened(WindowEvent arg0) {
 		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
-		System.out.println("Du hast geklickt!!! x: " + e.getx() + " y: " + e.getx());
-		grid.addCell(e.getX()/scale,e.getY()/scale);
-	}
-
-
-
-	@Override
-	public void mouseEntered(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void mouseExited(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		System.out.println("Du hast geklickt!!! x: " + e.getx() + " y: " + e.getx());
-		grid.addCell(e.getX()/scale,e.getY()/scale);
-	}
-
-
-
-	@Override
-	public void mouseReleased(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		System.out.println("Du hast geklickt!!! x: " + e.getx() + " y: " + e.getx());
 		
 	}
 }
